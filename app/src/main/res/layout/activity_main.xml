@@ -24,6 +24,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#008080"
         android:orientation="horizontal">
 
         <Button
@@ -31,6 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#008080"
             android:text="Polub" />
 
         <Button
@@ -38,6 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#008080"
             android:text="Usuń" />
 
         <Button
@@ -45,24 +48,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#008080"
             android:text="Zapisz" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:rotationX="0"
         android:textAlignment="textEnd"
         android:text="0 polubień"
-        android:textSize="16dp" />
 
-    <TextView
-        android:id="@+id/textView2"
+        android:textSize="16dp" />
+        <!-- albo layout width match parent albo layout gravity end -->
+
+    <EditText
+        android:id="@+id/editTextText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:ems="10"
+        android:inputType="text"
         android:text="Opis" />
 
     <TextView
